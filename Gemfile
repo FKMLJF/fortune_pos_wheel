@@ -11,6 +11,7 @@ gem "jbuilder"
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
 gem 'eth', '~> 0.4.0'
+gem 'escpos'
 
 gem "bootsnap", require: false  # Add this line
 

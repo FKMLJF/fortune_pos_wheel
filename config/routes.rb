@@ -11,4 +11,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "games#index"
+  post 'games/print_receipt', to: 'games#print_receipt'
 end

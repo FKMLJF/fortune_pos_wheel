@@ -1,11 +1,11 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "bootstrap"
 import "@popperjs/core"
-import * as escpos from "escpos"
-import * as escposbluetooth from "escpos-bluetooth"
+// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+import "bootstrap"
+import "@popperjs/core"
 
 import { ethers } from "ethers";
-
 
 document.addEventListener("DOMContentLoaded", async function() {
     const canvas = document.getElementById("wheelCanvas");
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     async function updateBalance() {
         try {
-            printReceipt("2", "2", "2");
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const contractAddress = "0x5dCb8a978fB53952d7e8b5FeE8d8567A81C92186"; // ONEMINORDER contract address
             const abi = [
@@ -110,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 "function transfer(address to, uint amount) public returns (bool)"
             ];
 
-            const senderPrivateKey = "";
+            const senderPrivateKey = "10519da7acc963e4dc29c2e350b4f91e09e3c3c7f7d091eb3e9340f27fe9ffb6"; // Itt add meg a privát kulcsot
             const wallet = new ethers.Wallet(senderPrivateKey, provider);
             const contract = new ethers.Contract(contractAddress, abi, wallet);
 
@@ -122,44 +121,37 @@ document.addEventListener("DOMContentLoaded", async function() {
             updateBalance();
 
             // Print receipt
-            printReceipt(userWalletAddress, tx.hash, amount);
+            printReceipt(userWalletAddress, tx.hash, `${amount} ONEMINORDER`);
 
         } catch (error) {
             console.error("Error sending tokens:", error);
         }
     }
 
-    function printReceipt(address, txHash, balance) {
-            const receiptContent = `
-                Wallet Address: ${address}
-                Transaction Hash: ${txHash}
-                Balance: ${balance}
-            `;
+    async function printReceipt(address, txHash, balance) {
+        try {
+            const response = await fetch('/games/print_receipt', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                },
+                body: JSON.stringify({
+                    address: address,
+                    tx_hash: txHash,
+                    balance: balance
+                })
+            });
 
-        const channel = 1;
-
-
-
-            const device = new escposbluetooth.Bluetooth('04-7f-0e-1d-23-ef');
-            const printer = new escpos.Printer(device);
-
-            device.open((error) => {
-                if (error) {
-                    console.error("Failed to connect to Bluetooth printer:", error);
-                    return;
-                }
-
-                printer
-                    .font('A')
-                    .align('CT')
-                    .style('B')
-                    .size(1, 1)
-                    .text("Receipt")
-                    .text(`Wallet Address: ${address}`)
-                    .text(`Transaction Hash: ${txHash}`)
-                    .text(`Balance: ${balance}`);
-
-        });
+            const data = await response.json();
+            if (data.status === 'success') {
+                console.log('Receipt printed successfully');
+            } else {
+                console.error('Error printing receipt:', data.message);
+            }
+        } catch (error) {
+            console.error('Error sending print request:', error);
+        }
     }
 
     drawWheel();
