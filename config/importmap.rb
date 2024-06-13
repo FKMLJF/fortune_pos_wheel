@@ -1,13 +1,9 @@
 # Pin npm packages by running ./bin/importmap
 
 pin "application"
-pin "@hotwired/turbo-rails", to: "turbo.min.js"
-pin "@hotwired/stimulus", to: "stimulus.min.js"
-pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
-
-pin "bootstrap", to: "https://ga.jspm.io/npm:bootstrap@5.1.3/dist/js/bootstrap.esm.js"
-pin "jquery", to: "https://code.jquery.com/jquery-3.6.0.min.js"
-pin "@popperjs/core", to: "https://unpkg.com/@popperjs/core@2.10.2/dist/esm/popper.js"
-
-
-pin_all_from "app/javascript/controllers", under: "controllers"
+pin "bootstrap", to: "bootstrap.min.js", preload: true
+pin "qrcode", to: "https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"
+pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.6/lib/index.js"
+pin "ethers", to: "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.0/ethers.esm.min.js"
+pin "escpos", to: "https://cdn.jsdelivr.net/npm/escpos@3.0.0-alpha.6/index.min.js"
+pin "escpos-bluetooth", to: "https://cdn.jsdelivr.net/npm/escpos-bluetooth@3.0.0-alpha.2/index.min.js"

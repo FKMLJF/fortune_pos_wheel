@@ -42,6 +42,7 @@
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.6, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v10.4.16.0, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bech32 (v1.4.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v3.1.8, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.18.3, asdf: 3.3.2) [gem]" level="application" />
@@ -56,8 +57,10 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.9.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="eth (v0.4.18, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.9.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.17.0, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi-compiler (v1.3.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.5, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v2.0.1, asdf: 3.3.2) [gem]" level="application" />
@@ -66,6 +69,7 @@
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.12.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.6.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.7.2, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="keccak (v1.3.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.22.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, asdf: 3.3.2) [gem]" level="application" />
@@ -73,12 +77,14 @@
     <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.23.1, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="money-tree (v0.11.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.7.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.4.12, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.5.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.3, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.16.5, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="openssl (v3.2.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parallel (v1.25.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="parser (v3.3.3.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="popper_js (v2.11.8, asdf: 3.3.2) [gem]" level="application" />
@@ -100,6 +106,7 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.9.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.5.9, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.3.0, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rlp (v0.7.3, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.64.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.31.3, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-minitest (v0.35.0, asdf: 3.3.2) [gem]" level="application" />
@@ -110,11 +117,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="scrypt (v3.0.8, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.21.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.5.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v2.0.2, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stimulus-rails (v1.3.3, asdf: 3.3.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="stringio (v3.1.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="strscan (v3.1.0, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.1, asdf: 3.3.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.3.0, asdf: 3.3.2) [gem]" level="application" />
