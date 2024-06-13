@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 "function transfer(address to, uint amount) public returns (bool)"
             ];
 
-            const senderPrivateKey = "10519da7acc963e4dc29c2e350b4f91e09e3c3c7f7d091eb3e9340f27fe9ffb6"; // Itt add meg a privát kulcsot
+            const senderPrivateKey = "";
             const wallet = new ethers.Wallet(senderPrivateKey, provider);
             const contract = new ethers.Contract(contractAddress, abi, wallet);
 
