@@ -1,9 +1,6 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "bootstrap"
 import "@popperjs/core"
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "bootstrap"
-import "@popperjs/core"
 
 import { ethers } from "ethers";
 
@@ -104,12 +101,12 @@ document.addEventListener("DOMContentLoaded", async function() {
             await provider.send("eth_requestAccounts", []);
             const recipient = userWalletAddress;
             const amount = ethers.utils.parseUnits("10", 18); // 10 tokens
-            const contractAddress = "0x5dCb8a978fB53952d7e8b5FeE8d8567A81C92186"; // ONEMINORDER contract address
+            const contractAddress = "0x5dCb8a978fB53952d7e8b5FeE8d8567A81C92186";
             const abi = [
                 "function transfer(address to, uint amount) public returns (bool)"
             ];
 
-            const senderPrivateKey = "10519da7acc963e4dc29c2e350b4f91e09e3c3c7f7d091eb3e9340f27fe9ffb6"; // Itt add meg a privát kulcsot
+            const senderPrivateKey = localStorage.getItem("sourceWalletPK");
             const wallet = new ethers.Wallet(senderPrivateKey, provider);
             const contract = new ethers.Contract(contractAddress, abi, wallet);
 
